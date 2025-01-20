@@ -1,0 +1,11 @@
+.cart-qta{
+    width: 15rem;
+}
+/*.cart-products{*/
+/*    width: 100rem;*/
+/*}*/
+
+.cart-products .cart-qta-item{
+    width:5rem;
+}
+

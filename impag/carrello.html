@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrello</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+<div class="container">
+    <main class='carrello d-flex flex-wrap justify-content-center'>
+    <div class="d-flex flex-wrap">
+        <form action="#" method="post">
+            <div class="row-cols-3 my-3">
+                <div class="col-5 bg-secondary p-2">
+                    <div class="input-group">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="Nome">Nome:</span>
+                            <input type="text" class="form-control" placeholder="Nome" aria-label="Nome"
+                                   aria-describedby="Nome">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="Cognome">Cognome:</span>
+                            <input type="text" class="form-control" placeholder="Cognome" aria-label="Cognome"
+                                   aria-describedby="Cognome">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="indirizzo">Indirizzo:</span>
+                            <input type="text" class="form-control" placeholder="Indirizzo" aria-label="Indirizzo"
+                                   aria-describedby="Indirizzo">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="cap">CAP:</span>
+                            <input type="number" class="form-control" placeholder="CAP" aria-label="CAP"
+                                   aria-describedby="cap">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="tel">Telefono:</span>
+                            <input type="number" class="form-control" placeholder="tel" aria-label="tel"
+                                   aria-describedby="tel">
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="row bg-dark-subtle mt-3 p-3">
+                <div class="col-10">
+                    <div class="input-group">
+                        <table class="table table-responsive table-sm cart-products">
+                            <thead>
+                            <tr>
+                                <th class="cart-item" scope="col">#</th>
+                                <th class="cart-pr-name" scope="col">Nome_prodotto</th>
+                                <th class="cart-qta" scope="col"><span class="col-form-label" id="QtaLabel">Q.ta.</span>
+                                </th>
+                                <th class="cart-price" scope="col">Prezzo</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Arancia</td>
+                                <td>
+                                    <input class="cart-qta-item" type="number" aria-label="number" name="Qta[0]"
+                                           id="Qta" aria-describedby="QtaLabel">
+                                    <input type="hidden" name="Nome_prodotto[0]" value="Arancia">
+                                    <input type="hidden" name="Prezzo[0]" value="45">
+                                </td>
+                                <td>45€</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="ms-auto">
+                            <table class="table" style="width: 15px">
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Totale:</th>
+                                    <td>45€</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="card mt-5 bg-secondary p-3" style="width: 15rem;">
+            <div class="mx-auto">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Trasporto a mezzo:</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="input-group">
+                                <label>
+                                    <input name="Trasporto_a_Mezzo" class="form-check-input mt-0" type="radio" value="Corriere Espresso" checked> Corriere Espresso
+                                </label>
+
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+
+
+
+                </table>
+
+
+
+
+
+            </div>
+            </div>
+            <div class="card mt-5 bg-secondary p-3" style="width: 15rem;">
+                <div class="mx-auto">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Metodo di Pagamento:</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="input-group">
+                                    <label>
+                                        <input name="Metodo_di_Pagamento" class="form-check-input mt-0" type="radio" value="Carta di credito" checked> Carta di credito
+                                    </label>
+
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+
+
+
+                    </table>
+
+
+
+
+
+                </div>
+            </div>
+            <div class="d-flex justify-content-end mb-3">
+                <button class="btn btn-primary" type="submit">Invia</button>
+            </div>
+        </form>
+    </div>
+    </main>
+</div>
+
+
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

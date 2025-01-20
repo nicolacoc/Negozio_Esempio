@@ -1,0 +1,48 @@
+.input-group-text, input{
+    font-size: 10px;
+    height:1.5rem
+
+}
+
+.he1{
+    min-height: 50rem
+}
+
+.products .card .image img{
+    width:200px;
+   height: auto;
+}
+
+.products .card{
+    width: 15rem;
+    min-height: 20rem;
+}
+
+.offerta .card{
+    width: 10rem;
+    min-height: 15rem;
+}
+
+.primo .category{
+    min-height: 1.5rem;
+}
+
+.primo .card{
+    height: 10rem;
+    width: 10rem;
+}
+
+.cart-qta{
+    width: 15rem;
+}
+/*.cart-products{*/
+/*    width: 100rem;*/
+/*}*/
+
+.cart-products .cart-qta-item{
+    width:5rem;
+}
+
+.carrello .input-group-text{
+    width: 4.5rem;
+}

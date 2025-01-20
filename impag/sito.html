@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negozio</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="container text-center">
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item me-xl-2" aria-current="page">
+                                <a class="nav-link btn-link btn-group bg-secondary text-danger" href="#">Home Page</a>
+                            </li>
+                            <li class="nav-item me-xl-2" aria-current="page">
+                                <a class="nav-link btn-link btn-group bg-secondary text-danger" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item" aria-current="page">
+                                <a class="nav-link btn-link btn-group bg-secondary text-danger" href="#">Carrello</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 my-2 he1">
+
+        <div class="primo col-xl-2 border border-2 border-black bg-danger d-flex flex-column align-items-center">
+            <div class="category d-block  p-0 mt-2 mb-0">
+                <div class="p-0">
+                    <h2 class="fw-bold">Categoria:</h2>
+                </div>
+                <ul class="list-group my-2 p-0">
+                    <li class="list-group-item bg-transparent p-0">
+                        <a href="#"
+                           class="link-underline-opacity-0 link-underline-opacity-0-hover text-decoration-none">Frutti</a>
+                    </li>
+                    <li class="list-group-item bg-transparent p-0">
+                        <a href="#"
+                           class="link-underline-opacity-0 link-underline-opacity-0-hover text-decoration-none">Marmellate</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card p-0 mt-2">
+                <form action="#" method="post">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="userName">Nome<br></br>Utente</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="username"
+                               aria-describedby="UserName">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="password">Password</span>
+                        <input type="password" class="form-control" placeholder="password" aria-label="password"
+                               aria-describedby="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-xl-8 bg-secondary d-flex justify-content-center">
+            <div class="d-block">
+aaaaa
+            </div>
+        </div>
+        <div class="col-xl-2 bg-black offerta d-lg-flex justify-content-center flex-wrap d-sm-none">
+            <div class="card p-2 mt-3 d-block mb-auto">
+                <div class="mx-auto image">
+                    <img src="../img/arancia.jpg" class="card-img-top" alt="arancia">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title border border-2 border-black">Arancia</h5>
+                    <div class="mb-1">
+                        <span class="card-text">aa</span>
+                    </div>
+                    <a href="#" class="btn btn-primary">Aggiungi al Carrello</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
